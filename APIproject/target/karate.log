@@ -1,0 +1,1209 @@
+12:30:42.781 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:30:44.227 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:44.259 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:44.605 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:30:44.606 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+12:30:45.223 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 613
+1 < 200
+1 < Date: Wed, 11 Oct 2023 07:00:45 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1694523122
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 4471
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qzV9h0AZViyZxuG8ivKh7jbETIBPV%2BWCQi6dAh0GAzcUHYqVsa87kd5215PhHVP0TwSDtE6%2BpLjyZfvu%2BTFu5fbbpDSlBNyf3iJD3Xnrce%2FzUNQ2F3ZXz3rWMX%2B5lLINir8bNO0B0oeK3aHm3nGP"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81453a563bc85c35-SIN
+1 < alt-svc: h3=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+12:30:45.249 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+12:30:45.415 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 164
+2 < 200
+2 < Date: Wed, 11 Oct 2023 07:00:45 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1697003062&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=X2R3C3Nh%2F9tD8UtFAvgGTtlZapT2PSQzgYeI1wPowu8%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697003062&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=X2R3C3Nh%2F9tD8UtFAvgGTtlZapT2PSQzgYeI1wPowu8%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1697003067
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 4583
+2 < Server: cloudflare
+2 < CF-RAY: 81453a577e4f3f76-SIN
+2 < alt-svc: h3=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+12:30:45.734 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1126
+1 < 201
+1 < Date: Wed, 11 Oct 2023 07:00:45 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1697007688
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=X3dk2OfLqfseSMv%2Bx3QzdAGnl9TenRCRRzQ6ahJvv%2BM1ED9NZ6nbroFO6%2BmzHjlCqFGyLDslSyrDOJ7kMf1KrbJ4V4McxbNVr0BFtM25%2Fv9VpjXOc7Vl6gejb5mLUUhV3tXp3rVsfk0iEYquJ4fp"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81453a563dab4067-SIN
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+12:30:45.741 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+12:30:46.737 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+12:30:46.996 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:30:47.029 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:47.034 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:30:47.194 [main] DEBUG com.intuit.karate - response time in milliseconds: 158
+1 < 200
+1 < Date: Wed, 11 Oct 2023 07:00:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1694523122
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 4473
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=dC%2BFAxsdp5s2idYhQO9i5OiXzdrCae8Q%2F5V3ypXjzJs1Fy3PmbUf3rPo%2FiXwFYRgpBAv2clWLtaKMw1p9EhKl9t9nWCUvyYsJzncqUhDvcD7UE3UDT19GEp7HGWzkCR7Donyn2QpXYVVXMPz6Mkq"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81453a62ad1540f1-SIN
+1 < alt-svc: h3=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+12:30:47.206 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+12:30:47.384 [main] DEBUG com.intuit.karate - response time in milliseconds: 176
+2 < 200
+2 < Date: Wed, 11 Oct 2023 07:00:47 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1697003062&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=X2R3C3Nh%2F9tD8UtFAvgGTtlZapT2PSQzgYeI1wPowu8%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697003062&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=X2R3C3Nh%2F9tD8UtFAvgGTtlZapT2PSQzgYeI1wPowu8%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1697003067
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 4585
+2 < Server: cloudflare
+2 < CF-RAY: 81453a63de7f3f9b-SIN
+2 < alt-svc: h3=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+12:30:47.407 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:47.410 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+12:30:48.126 [main] DEBUG com.intuit.karate - response time in milliseconds: 714
+1 < 201
+1 < Date: Wed, 11 Oct 2023 07:00:48 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1697007688
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=H6a16KhbzzFER8g62spmUaPlOFlD4Bv%2FbY4rSmrd231j3ciktjiQtIO%2Bma4oXK%2BV6%2BbdZYSdtCNMuGLeDnulNZuiN4jtuzOwcad9t13O%2BXpMiY%2B6j%2Bac1GNVnCWWGwBL5nodPxIlBWuAw72R6bTq"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81453a650c595cd9-SIN
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+12:30:48.135 [main] INFO  com.intuit.karate - [print] created id is:  11 
+12:36:54.392 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:36:54.405 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697008014397
+12:36:55.812 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+12:36:55.845 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:36:56.157 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:36:56.158 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+12:36:56.514 [pool-1-thread-1] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 635 milliseconds for url: https://jsonplaceholder.typicode.com/users
+12:36:56.514 [pool-1-thread-2] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 465 milliseconds for url: https://jsonplaceholder.typicode.com/users
+12:36:56.521 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/users/users.feature:36
+When method post
+http call failed after 465 milliseconds for url: https://jsonplaceholder.typicode.com/users
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+classpath:examples/users/users.feature:36
+12:36:56.521 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/users.feature:9
+When method get
+http call failed after 635 milliseconds for url: https://jsonplaceholder.typicode.com/users
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+classpath:examples/users/users.feature:9
+12:36:57.447 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+12:36:57.719 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:36:57.755 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:36:57.761 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:36:57.872 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 112 milliseconds for url: https://jsonplaceholder.typicode.com/users
+12:36:57.873 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:9
+When method get
+http call failed after 112 milliseconds for url: https://jsonplaceholder.typicode.com/users
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+classpath:examples/users/users.feature:9
+12:36:57.888 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:36:57.894 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+12:36:58.021 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 128 milliseconds for url: https://jsonplaceholder.typicode.com/users
+12:36:58.022 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:36
+When method post
+http call failed after 128 milliseconds for url: https://jsonplaceholder.typicode.com/users
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+classpath:examples/users/users.feature:36
+14:32:42.292 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:32:43.455 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:32:43.489 [main] INFO  com.intuit.karate - [print] hello world 
+15:02:28.840 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:02:29.868 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:02:29.908 [main] INFO  com.intuit.karate - [print] hello world 
+12:56:06.822 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:56:07.897 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:56:08.115 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=77f1468b3cb0accb888c9ee585b125b5
+1 > Host: api.openweathermap.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:56:09.313 [main] DEBUG com.intuit.karate - response time in milliseconds: 1195
+1 < 200
+1 < Server: openresty
+1 < Date: Thu, 12 Oct 2023 07:26:09 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 509
+1 < Connection: keep-alive
+1 < X-Cache-Key: /data/2.5/weather?lat=44.34&lon=10.99
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET, POST
+{"coord":{"lon":10.99,"lat":44.34},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":288.3,"feels_like":288.19,"temp_min":286.05,"temp_max":289.31,"pressure":1022,"humidity":89,"sea_level":1022,"grnd_level":937},"visibility":10000,"wind":{"speed":1.35,"deg":203,"gust":1.7},"clouds":{"all":8},"dt":1697095569,"sys":{"type":2,"id":2004688,"country":"IT","sunrise":1697088384,"sunset":1697128713},"timezone":7200,"id":3163858,"name":"Zocca","cod":200}
+
+12:36:06.860 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:36:08.014 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:36:08.243 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=77f1468b3cb0accb888c9ee585b125b5
+1 > Host: api.openweathermap.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:36:09.641 [main] DEBUG com.intuit.karate - response time in milliseconds: 1395
+1 < 200
+1 < Server: openresty
+1 < Date: Fri, 13 Oct 2023 07:06:09 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 520
+1 < Connection: keep-alive
+1 < X-Cache-Key: /data/2.5/weather?lat=44.34&lon=10.99
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET, POST
+{"coord":{"lon":10.99,"lat":44.34},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":286.97,"feels_like":286.68,"temp_min":285.16,"temp_max":287.97,"pressure":1022,"humidity":87,"sea_level":1022,"grnd_level":937},"visibility":10000,"wind":{"speed":1.43,"deg":201,"gust":2.15},"clouds":{"all":100},"dt":1697180402,"sys":{"type":2,"id":2004688,"country":"IT","sunrise":1697174858,"sunset":1697215008},"timezone":7200,"id":3163858,"name":"Zocca","cod":200}
+
+12:36:09.708 [main] ERROR com.intuit.karate - classpath:features/GetCurrentWeather.feature:11
+And match response.weather.description contains 'overcast clouds'
+match failed: CONTAINS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'overcast clouds'
+
+classpath:features/GetCurrentWeather.feature:11
+12:37:28.910 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:37:29.832 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:37:30.047 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=77f1468b3cb0accb888c9ee585b125b5
+1 > Host: api.openweathermap.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:37:31.197 [main] DEBUG com.intuit.karate - response time in milliseconds: 1147
+1 < 200
+1 < Server: openresty
+1 < Date: Fri, 13 Oct 2023 07:07:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 520
+1 < Connection: keep-alive
+1 < X-Cache-Key: /data/2.5/weather?lat=44.34&lon=10.99
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET, POST
+{"coord":{"lon":10.99,"lat":44.34},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":286.97,"feels_like":286.68,"temp_min":285.16,"temp_max":287.97,"pressure":1022,"humidity":87,"sea_level":1022,"grnd_level":937},"visibility":10000,"wind":{"speed":1.43,"deg":201,"gust":2.15},"clouds":{"all":100},"dt":1697180402,"sys":{"type":2,"id":2004688,"country":"IT","sunrise":1697174858,"sunset":1697215008},"timezone":7200,"id":3163858,"name":"Zocca","cod":200}
+
+12:46:06.589 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:46:07.552 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:46:07.768 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=77f1468b3cb0accb888c9ee585b125b5
+1 > Host: api.openweathermap.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:46:08.944 [main] DEBUG com.intuit.karate - response time in milliseconds: 1170
+1 < 200
+1 < Server: openresty
+1 < Date: Fri, 13 Oct 2023 07:16:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 519
+1 < Connection: keep-alive
+1 < X-Cache-Key: /data/2.5/weather?lat=44.34&lon=10.99
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET, POST
+{"coord":{"lon":10.99,"lat":44.34},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":287.71,"feels_like":287.47,"temp_min":285.16,"temp_max":289.8,"pressure":1022,"humidity":86,"sea_level":1022,"grnd_level":937},"visibility":10000,"wind":{"speed":1.43,"deg":201,"gust":2.15},"clouds":{"all":100},"dt":1697181329,"sys":{"type":2,"id":2004688,"country":"IT","sunrise":1697174858,"sunset":1697215008},"timezone":7200,"id":3163858,"name":"Zocca","cod":200}
+
+12:46:09.016 [main] ERROR com.intuit.karate - classpath:features/GetCurrentWeather.feature:13
+And match response.weather[0].description contains =='#string'
+js failed:
+>>>>
+01: =='#string'
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found ==
+=='#string'
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2147)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1750)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:175)
+
+classpath:features/GetCurrentWeather.feature:13
+12:48:03.989 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:48:04.917 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:48:05.124 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=77f1468b3cb0accb888c9ee585b125b5
+1 > Host: api.openweathermap.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:48:06.277 [main] DEBUG com.intuit.karate - response time in milliseconds: 1150
+1 < 200
+1 < Server: openresty
+1 < Date: Fri, 13 Oct 2023 07:18:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 519
+1 < Connection: keep-alive
+1 < X-Cache-Key: /data/2.5/weather?lat=44.34&lon=10.99
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET, POST
+{"coord":{"lon":10.99,"lat":44.34},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":287.71,"feels_like":287.47,"temp_min":285.16,"temp_max":289.8,"pressure":1022,"humidity":86,"sea_level":1022,"grnd_level":937},"visibility":10000,"wind":{"speed":1.43,"deg":201,"gust":2.15},"clouds":{"all":100},"dt":1697181329,"sys":{"type":2,"id":2004688,"country":"IT","sunrise":1697174858,"sunset":1697215008},"timezone":7200,"id":3163858,"name":"Zocca","cod":200}
+
+11:33:33.367 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:33:35.414 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:33:35.814 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=77f1468b3cb0accb888c9ee585b125b5
+1 > Host: api.openweathermap.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:33:37.322 [main] DEBUG com.intuit.karate - response time in milliseconds: 1502
+1 < 200
+1 < Server: openresty
+1 < Date: Mon, 16 Oct 2023 06:03:37 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 519
+1 < Connection: keep-alive
+1 < X-Cache-Key: /data/2.5/weather?lat=44.34&lon=10.99
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET, POST
+{"coord":{"lon":10.99,"lat":44.34},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":283.61,"feels_like":282.77,"temp_min":278.56,"temp_max":285.61,"pressure":1019,"humidity":79,"sea_level":1019,"grnd_level":932},"visibility":10000,"wind":{"speed":2.16,"deg":61,"gust":6.04},"clouds":{"all":100},"dt":1697435750,"sys":{"type":2,"id":2075663,"country":"IT","sunrise":1697434284,"sunset":1697473898},"timezone":7200,"id":3163858,"name":"Zocca","cod":200}
+
+11:33:37.377 [main] INFO  com.intuit.karate - [print] overcast clouds 
+13:52:28.253 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:52:29.204 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:52:29.516 [main] DEBUG com.intuit.karate - request:
+1 > POST https://dummy.restapiexample.com/api/v1/create
+1 > Content-Type: text/plain; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"narmatha","salary":"123345445","age":"23"}
+
+13:52:31.096 [main] DEBUG com.intuit.karate - response time in milliseconds: 1254
+1 < 200
+1 < Date: Mon, 16 Oct 2023 08:22:30 GMT
+1 < Server: Apache
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Upgrade: h2,h2c
+1 < Connection: Upgrade
+1 < Expires: Mon, 16 Oct 2023 14:22:30 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < Content-Type: application/json
+{"status":"success","data":{"id":133},"message":"Successfully! Record has been added."}
+
+13:54:32.249 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:54:33.196 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:54:33.478 [main] DEBUG com.intuit.karate - request:
+1 > POST https://dummy.restapiexample.com/api/v1/create
+1 > Content-Type: text/plain; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"narmatha","salary":"123345445","age":"23"}
+
+13:54:34.973 [main] DEBUG com.intuit.karate - response time in milliseconds: 1172
+1 < 200
+1 < Date: Mon, 16 Oct 2023 08:24:34 GMT
+1 < Server: Apache
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Upgrade: h2,h2c
+1 < Connection: Upgrade
+1 < Expires: Mon, 16 Oct 2023 14:24:34 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < Content-Type: application/json
+{"status":"success","data":{"id":5945},"message":"Successfully! Record has been added."}
+
+13:54:34.980 [main] ERROR com.intuit.karate - classpath:features/PostReq.feature:7
+Then status "success"
+no step-definition method match found for: status "success"
+classpath:features/PostReq.feature:7
+13:57:58.375 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:57:59.323 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:59.621 [main] DEBUG com.intuit.karate - request:
+1 > POST https://dummy.restapiexample.com/api/v1/create
+1 > Content-Type: text/plain; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"narmatha","salary":"123345445","age":"23"}
+
+13:58:01.458 [main] DEBUG com.intuit.karate - response time in milliseconds: 1519
+1 < 200
+1 < Date: Mon, 16 Oct 2023 08:28:00 GMT
+1 < Server: Apache
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Upgrade: h2,h2c
+1 < Connection: Upgrade
+1 < Expires: Mon, 16 Oct 2023 14:28:00 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < Content-Type: application/json
+{"status":"success","data":{"id":9855},"message":"Successfully! Record has been added."}
+
+13:10:13.327 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:10:14.719 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:10:14.772 [main] INFO  com.intuit.karate - [print] hello world 
+13:16:18.503 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:16:19.936 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:19.992 [main] INFO  com.intuit.karate - [print] hello world 
+13:42:12.844 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:14.780 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:14.843 [main] INFO  com.intuit.karate - [print] hello world 
+13:42:14.889 [main] ERROR com.intuit.karate - classpath:features/Hello.feature:6
+* print 'narmatha's automation lab'
+js failed:
+>>>>
+01: karate.log('[print]','narmatha's automation lab')
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:49 Missing close quote
+karate.log('[print]','narmatha's automation lab')
+                                                 ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioEngine.print(ScenarioEngine.java:243)
+- com.intuit.karate.ScenarioActions.print(ScenarioActions.java:297)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+classpath:features/Hello.feature:6
+13:42:14.934 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:14.953 [main] ERROR com.intuit.karate - classpath:features/Hello.feature:12
+* print 'total c-->' + (a+b)
+js failed:
+>>>>
+01: karate.log('[print]','total c-->' + (a+b))
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "a" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/Hello.feature:12
+13:43:34.900 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:43:36.416 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:43:36.475 [main] INFO  com.intuit.karate - [print] hello world 
+13:43:36.481 [main] INFO  com.intuit.karate - [print] narmathas automation lab 
+13:43:36.502 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:43:36.535 [main] ERROR com.intuit.karate - classpath:features/Hello.feature:12
+* print 'total c-->' + (a+b)
+js failed:
+>>>>
+01: karate.log('[print]','total c-->' + (a+b))
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "a" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/Hello.feature:12
+13:44:52.684 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:44:54.238 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:44:54.297 [main] INFO  com.intuit.karate - [print] hello world 
+13:44:54.302 [main] INFO  com.intuit.karate - [print] narmathas automation lab 
+13:44:54.322 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:44:54.329 [main] ERROR com.intuit.karate - classpath:features/Hello.feature:10
+* def a=10
+no step-definition method match found for: def a=10
+classpath:features/Hello.feature:10
+13:49:31.494 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:49:33.110 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:49:33.177 [main] INFO  com.intuit.karate - [print] hello world 
+13:49:33.186 [main] INFO  com.intuit.karate - [print] narmathas automation lab 
+13:49:33.204 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:49:33.241 [main] INFO  com.intuit.karate - [print] total c-->20 
+13:50:49.253 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:50:50.733 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:50:50.796 [main] INFO  com.intuit.karate - [print] hello world 
+13:50:50.801 [main] INFO  com.intuit.karate - [print] narmathas automation lab 
+13:50:50.821 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:50:50.827 [main] ERROR com.intuit.karate - classpath:features/Hello.feature:10
+* def a=10
+no step-definition method match found for: def a=10
+classpath:features/Hello.feature:10
+13:51:26.515 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:51:28.080 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:51:28.140 [main] INFO  com.intuit.karate - [print] hello world 
+13:51:28.147 [main] INFO  com.intuit.karate - [print] narmathas automation lab 
+13:51:28.168 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:51:28.205 [main] INFO  com.intuit.karate - [print] total c-->20 
+14:02:44.359 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:02:45.802 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:02:45.936 [main] INFO  com.intuit.karate - [print] [
+  {
+    "name": "Tom",
+    "city": "Bangalore",
+    "Age": 25
+  },
+  {
+    "name": "Tobia",
+    "city": "chennai",
+    "Age": 15
+  }
+]
+ 
+14:08:12.209 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:08:13.874 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:08:14.039 [main] INFO  com.intuit.karate - [print] [
+  {
+    "name": "Tom",
+    "city": "Bangalore",
+    "Age": 25
+  },
+  {
+    "name": "Tobia",
+    "city": "chennai",
+    "Age": 15
+  }
+]
+ 
+14:08:14.059 [main] INFO  com.intuit.karate - [print] {
+  "name": "Tom",
+  "city": "Bangalore",
+  "Age": 25
+}
+ 

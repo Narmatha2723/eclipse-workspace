@@ -1,0 +1,30 @@
+package PageFactoryFiles;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class OpenNewTab {
+	public static void main(String[] args) {
+        
+        // Initialize ChromeDriver
+		WebDriver driver = new ChromeDriver();
+
+        // Open a webpage in the first tab
+        driver.get("https://www.example.com");
+
+        // Create Actions class object
+        Actions actions = new Actions(driver);
+
+//        // Simulate keyboard action to open a new tab
+//        actions.keyDown(Keys.CONTROL).sendKeys("t").keyUp(Keys.CONTROL).perform();
+
+        // Switch to the new tab
+        driver.switchTo().window(driver.getWindowHandles().toArray()[1].toString());
+
+        // Open a webpage in the new tab
+        driver.get("https://www.example2.com");
+    }
+
+}

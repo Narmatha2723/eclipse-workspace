@@ -1,0 +1,21 @@
+package javaprogms;
+
+public class Reversenos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 12345;
+		String n1 = Integer.toString(n);
+		char []c=n1.toCharArray();
+		int len = c.length;
+		for(int i=len;i>=len;len--) {
+			System.out.println(c[i]);
+		
+		}
+//		String s="narmatha";
+//		char []c=s.toCharArray();
+//		System.out.println(c[1]);
+
+	}
+
+}

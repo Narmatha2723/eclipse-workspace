@@ -1,0 +1,18 @@
+package saucelabs.logpage;
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+public class demoqaapp {
+	public static void main(String[] args)throws InterruptedException {
+        // TODO Auto-generated method stub
+        System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
+        WebDriver d=new ChromeDriver();
+        d.navigate().to("https://demoqa.com/select-menu");
+        d.manage().window().maximize();
+        WebElement a = d.findElement(By.id("cars"));
+      
+        }
+}

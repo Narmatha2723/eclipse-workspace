@@ -1,0 +1,1 @@
+Feature: Validating Get Request Using Karate

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\NARMAE\eclipse-workspace\sprint"/>
+			<item value="C:\Users\NARMAE\eclipse-workspace\KarateProject"/>
+			<item value="C:\Users\NARMAE\eclipse-workspace\abcd"/>
+			<item value="C:\Users\NARMAE\eclipse-workspace\KarateFramework"/>
+			<item value="C:\Users\NARMAE\eclipse-workspace\ApiTesting1\src\test\java\com\karate\ApiTesting1\Request.feature"/>
+			<item value="org.apache.maven"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.capgemini.TestngExamples"/>
+			<item value="com.capgemini.xyzTestng"/>
+		</list>
+		<list key="groupId">
+			<item value="com.capgemini"/>
+		</list>
+		<list key="artifactId">
+			<item value="TestngExamples"/>
+			<item value="xyzTestng"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\NARMAE\eclipse-workspace\TestNGTutorial"/>
+			<item value="C:\Users\NARMAE\eclipse-workspace\XYZAssessment"/>
+			<item value="C:\Users\NARMAE\eclipse-workspace\SeleniumTraining"/>
+			<item value="C:\Users\NARMAE\eclipse-workspace\OrangeHRMautomation"/>
+			<item value="C:\Users\NARMAE\eclipse-workspace\SauceDemosite"/>
+			<item value="C:\Users\NARMAE\Downloads\SeleniumPracticeQues"/>
+			<item value="C:\Users\NARMAE\Downloads\Seleniumtraining"/>
+			<item value="C:\Users\NARMAE\Downloads\seleniumpractice 1"/>
+			<item value="C:\Users\NARMAE\eclipse-workspace\OrangeHRMautomationScript"/>
+			<item value="C:\Users\NARMAE\Desktop\RestAssured"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[name]"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+</section>

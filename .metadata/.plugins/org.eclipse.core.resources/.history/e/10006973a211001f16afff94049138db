@@ -1,0 +1,28 @@
+package numArrays;
+
+public class PalindromicSeries {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=20,j;
+		String rev="";
+		for(int i=0;i<=n;i++) {
+			if(i<10) {
+				System.out.println(i);
+			}
+			else if(i>10) {
+				String org=String.valueOf(i);
+				while(i>0) {
+				 j =i%10;
+				 rev +=String.valueOf(j);
+				 System.out.println(rev);
+				i=i/10;
+			}
+			if(org.equals(rev)) {
+				System.out.println(org);
+			}
+		}
+
+	}
+
+}}

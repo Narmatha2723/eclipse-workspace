@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;excel.java&apos; to &apos;OrangeHRMautomation/src/test/java/PageFactoryFiles&apos;&#x0D;&#x0A;- Original project: &apos;OrangeHRMautomation&apos;&#x0D;&#x0A;- Destination element: &apos;OrangeHRMautomation/src/test/java/PageFactoryFiles&apos;&#x0D;&#x0A;- Original element: &apos;stepDefinitionFiles.excel.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;PageFactoryFiles" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;stepDefinitionFiles{excel.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1704432940284" units="1" version="1.0"/>
+</session>

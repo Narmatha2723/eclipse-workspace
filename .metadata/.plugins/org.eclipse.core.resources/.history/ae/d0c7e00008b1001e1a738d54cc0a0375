@@ -1,0 +1,202 @@
+package PageFactoryFiles;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class JobdropdownPF {
+	
+	@FindBy(xpath = "//input[@name='username']") WebElement Username;
+	@FindBy(xpath = "//input[@name='password']") WebElement Password;
+	@FindBy(xpath = "//button[@type='submit']") WebElement login;
+	@FindBy(xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a") WebElement adminlink;
+	@FindBy(xpath = "/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/span/i")WebElement Job;
+	@FindBy(xpath = "/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[1]/a") WebElement jobTitle;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary']") WebElement addButton;
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/input") WebElement jobtext;
+	@FindBy(xpath = "//textarea[@placeholder='Type description here']") WebElement jobDes; 
+	@FindBy(xpath = "//div[@class='oxd-file-button']") WebElement browse;
+	@FindBy(xpath = "//textarea[@placeholder='Add note']") WebElement addnote;
+	@FindBy(xpath = "//button[@type='submit']") WebElement save;
+	@FindBy(xpath = "/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[2]/a") WebElement payGrades;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary']") WebElement AddButton;
+	@FindBy(xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div/div/div[2]/input") WebElement payGradeName;
+	@FindBy(xpath = "//button[@type='submit']") WebElement savePay;
+	@FindBy(xpath = "/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[3]/a") WebElement empmntStatus;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary']") WebElement Add;
+	@FindBy(xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/input") WebElement empstatusName;
+	@FindBy(xpath = "//button[@type='submit']") WebElement saveEmpStatus;
+	@FindBy(xpath = "/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[4]/a") WebElement jobCategories ;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary']") WebElement AddCats;
+	@FindBy(xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/input") WebElement CategoryName;
+	@FindBy(xpath = "//button[@type='submit']") WebElement saveCategory;
+	@FindBy(xpath = "/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[5]/a") WebElement workShifts;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary']") WebElement addShift;
+	@FindBy(xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div/div/div[2]/input") WebElement shiftName;
+	@FindBy(xpath = "//input[@placeholder='Type for hints...']") WebElement AssignedEmp;
+	@FindBy(xpath = "//button[@type='submit']") WebElement saveShifts;
+	@FindBy(xpath = "//i[@class='oxd-icon bi-trash'][1]") WebElement trashicon;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']") WebElement delete;
+	@FindBy(xpath="//p[@class=\"oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text\"]") WebElement popup;
+
+	WebDriver driver;
+	Robot robot;
+//	Creating object for excel class	
+	excel ex = new excel();
+	
+//  Initializing driver and driver elements	
+	public JobdropdownPF(WebDriver driver) {
+		this.driver = driver;                    
+		PageFactory.initElements(driver, this);
+	}
+	
+//	Fetching user name and password from Excel	
+	public void Login() throws IOException {
+		Username.sendKeys(ex.Uname());                     
+		Password.sendKeys(ex.Password());                  
+		}
+
+//  Getting login to the web site
+	public void dashboard() throws InterruptedException {
+		login.click();                                     
+		}
+	
+//  click admin link from side bar	
+	public void AdminTile() throws InterruptedException {
+		adminlink.click();                                  
+		
+	}
+//	click Job top bar item and Jobtitle drop down item
+	public void Jobdd() throws InterruptedException {
+		Job.click();                                      
+		jobTitle.click();                                
+		
+	}
+//	click add button to add job title
+    public void addBtn() {
+    	addButton.click();                               
+    }
+    
+//    Adding job details
+    public void jobDetails() throws InterruptedException, IOException {
+    	
+    	jobtext.click();                                
+    	jobtext.sendKeys(ex.JobText());                 
+    	jobDes.sendKeys(ex.JobDescription());           
+    	
+    	}
+ // click browse button to select file from our local device
+    public void browseFile() throws InterruptedException, AWTException, IOException {
+      browse.click();                                      
+      Thread.sleep(3000);
+      robot = new Robot();
+    	
+  	  StringSelection filepath=new StringSelection("C:\\Users\\NARMAE\\Downloads\\IMG.jpg");     
+  	  Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filepath,null);              
+  	  
+  	  robot.keyPress(KeyEvent.VK_CONTROL);                                                      
+  	  robot.keyPress(KeyEvent.VK_V);                                                            
+  	  Thread.sleep(1000);
+  	  robot.keyRelease(KeyEvent.VK_V);
+  	  robot.keyRelease(KeyEvent.VK_CONTROL);
+  	  robot.keyPress(KeyEvent.VK_ENTER);                                                        
+  	  robot.keyRelease(KeyEvent.VK_ENTER);                                                      
+  	  
+  	  System.out.println("File Uploaded Successfully");                                        
+  	  addnote.sendKeys(ex.LeaveComment());
+  	  }
+//  save Job details
+    public void saveJob() throws InterruptedException {
+    	save.click();
+    	}
+// Validating PopUp message
+    public void Popup1() {
+    	String expectedText = popup.getText();                                     
+    	System.out.println(expectedText);
+		Assert.assertEquals(expectedText, "Successfully Saved");
+		System.out.println("Job title Successfully Saved");
+	}
+    
+//  click pay grade drop down item from Job drop down
+    public void PayGrades(){
+    	Job.click();                                                             
+    	payGrades.click();                                                    
+    	}
+//  fetching grade from excel sheet   
+    public void paygradeName()throws IOException, InterruptedException {
+    	AddButton.click();
+    	payGradeName.sendKeys(ex.PayGrade());                                  
+    	savePay.click();
+    	}
+    
+ 
+    public void EmpStatus() throws IOException {
+    	Job.click();                                                              
+    	
+    	empmntStatus.click();                                                    // click employee status drop down item
+    	
+    	Add.click();
+    	
+    	empstatusName.sendKeys(ex.EmployeeStatus());                             // fetching employee status input from excel
+    	
+    	saveEmpStatus.click();                                                   // click save button to save status
+    	
+    }
+    
+    public void jobCategories() throws IOException {
+    	
+    	Job.click();                                                            //Click job drop down 
+    	
+    	jobCategories.click();                                                  //Click job categories drop down item 
+    	
+    	AddCats.click();                                                        // click add button to add categories
+    	
+    	CategoryName.sendKeys(ex.JobCategory());                                // fetching job category from excel
+    	
+    	saveCategory.click();                                                   
+    	
+    }
+    
+    public void Workshifts() throws IOException, InterruptedException {
+    	
+    	Job.click();                                                      //Click job drop down         
+    	
+    	workShifts.click();                                               //Click job categories drop down item 
+    	
+    	addShift.click();                                                // adding shift
+    	
+    	shiftName.sendKeys(ex.ShiftName());                              // fetching shift name from excel
+    	
+    	AssignedEmp.sendKeys(ex.AssignAdmin());                          // fetching employee name from excel 
+    	Thread.sleep(3000);
+    	robot.keyPress(KeyEvent.VK_DOWN);                                // selecting employee name from drop down using robot keys
+		robot.keyPress(KeyEvent.VK_ENTER);
+		
+		saveShifts.click();
+		
+    }
+    
+    public void clickTrash(){
+    	trashicon.click();                                             // clicking trash icon from employee records
+    		
+    }
+    public void YesDelete() {
+    	delete.click();                                                // delete respective user shift details
+    	
+    }
+    public void Popup2() {
+    	String expectedText = popup.getText();
+    	System.out.println(expectedText);
+		Assert.assertEquals(expectedText, "Successfully Deleted");
+		System.out.println("work shift Successfully deleted");        // validating popup message 
+	}
+}

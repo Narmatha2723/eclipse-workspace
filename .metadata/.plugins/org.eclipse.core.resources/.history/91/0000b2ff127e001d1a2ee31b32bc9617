@@ -1,0 +1,13 @@
+package assignments;
+
+public class unlabled {
+	public static void main(String[] args) {
+		for(int i=9999;i<=99999;i++) {
+			if(i%397==0) {
+				break;
+			}
+			System.out.println(i);
+		}
+	}
+
+}

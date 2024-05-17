@@ -1,0 +1,120 @@
+package PageFactoryFiles;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+public class HRMloginPF {
+
+	@FindBy(xpath = "//input[@name='username']") WebElement Username;
+	@FindBy(xpath = "//input[@name='password']") WebElement Password;
+	@FindBy(xpath = "//button[@type='submit']") WebElement login;
+	@FindBy(xpath = "//h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']") WebElement dashboardText;
+	@FindBy(xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a") WebElement adminlink;
+	@FindBy(xpath = "//*[contains(text(),\"User Management \")]") WebElement usermgt;
+	@FindBy(xpath = "//*[contains(text(),\"Users\")]") WebElement users;
+	@FindBy(xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[1]/button/i") WebElement addBtn;
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div/div[2]/i") WebElement userRole;
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/div/div[2]/div/div/input") WebElement empName;
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[3]/div/div[2]/div/div/div[2]/i")WebElement status;
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[4]/div/div[2]/input") WebElement username;
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[1]/div/div[2]/input") WebElement psword;
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input") WebElement confpswrd;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']") WebElement saveBtn;
+	@FindBy(xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input") WebElement addedUrser;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']") WebElement searchBtn;
+	@FindBy(css= "div[class=\"oxd-table-cell oxd-padding-cell\"]:nth-child(2)") WebElement AddedUserVisible;
+	@FindBy(xpath = "//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']") WebElement userProfile;
+	@FindBy(xpath = "//a[@href='/web/index.php/auth/logout']") WebElement logoutBtn ;
+	@FindBy(xpath = "//img[@src='/web/images/ohrm_branding.png?v=1689053487449']") WebElement OrangeHrmLogo;
+	@FindBy(xpath="//p[@class=\"oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text\"]") WebElement popup;
+	
+	
+	WebDriver driver;
+	Robot robot;
+//	Creating object for excel class 
+	excel ex = new excel();
+
+//  Initializing driver and driver elements
+	public HRMloginPF(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
+//	Fetching user name and password from Excel
+	public void Login() throws IOException {
+		Username.sendKeys(ex.Uname());       
+		Password.sendKeys(ex.Password());    
+		}
+	
+//	Getting login to the web site and validating that using assert
+	public void dashboard(){
+		login.click();
+		boolean isDisplayed = dashboardText.isDisplayed();
+		if (isDisplayed) {
+		    System.out.println("suceesfully landed on home page.");
+		    // Perform desired actions
+		} else {
+		    System.out.println("can't abe to land.");
+		    // Handle the element not being displayed
+		}
+		}
+	
+//	Adding new user 
+	public void Admin() throws AWTException,IOException, InterruptedException {
+		adminlink.click();              
+		usermgt.click();                
+		users.click();                  
+		addBtn.click();                 
+		userRole.click();               
+		robot = new Robot();
+		robot.keyPress(KeyEvent.VK_DOWN);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		empName.sendKeys(ex.AssignAdmin());
+		Thread.sleep(2000);
+		robot.keyPress(KeyEvent.VK_DOWN);
+		robot.keyPress(KeyEvent.VK_ENTER);     
+		status.click();                      
+		robot.keyPress(KeyEvent.VK_DOWN);
+		robot.keyPress(KeyEvent.VK_ENTER);    
+		username.sendKeys(ex.NewUserName());  
+		psword.sendKeys(ex.NewPassword());    
+		confpswrd.sendKeys(ex.ConfNewPswd());   
+		saveBtn.click();                       
+		 
+		}
+//	Validating the Pop message
+	public void Popup() {
+		Assert.assertEquals(popup.getText(),"Successfully Saved");
+		System.out.println("Successfully Saved");                      
+	}
+	
+//	Searching and validating the added User
+	public void Addeduser() throws IOException {
+		addedUrser.sendKeys(ex.NewUserName());         
+		searchBtn.click();
+		boolean isDisplayed = AddedUserVisible.isDisplayed();
+		if (isDisplayed) {
+		    System.out.println("Added User is visible under Records");
+		} else {
+		    System.out.println("Added User is not visible under Records");                      
+		}
+	}
+//	Getting logout and validating that successfully logged out
+	public void Logout() throws InterruptedException {
+		userProfile.click();
+		logoutBtn.click();
+		boolean isDisplayed = OrangeHrmLogo.isDisplayed();
+		if (isDisplayed) {
+		    System.out.println("successfully logged out.");
+		    
+		} else {
+		    System.out.println("can't abe to logout.");
+		}                                                           
+		}
+}

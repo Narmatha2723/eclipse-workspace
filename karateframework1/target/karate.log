@@ -1,0 +1,30 @@
+16:50:25.213 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:50:26.139 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:50:26.173 [main] ERROR com.intuit.karate - classpath:examples/users/getapiData.feature:6
+When method GET
+java.net.URISyntaxException: Illegal character in opaque part at index 4: url: https://api.bestbuy.com/click/5592e2b895800000/12345678/pdp
+classpath:examples/users/getapiData.feature:6
+16:52:33.874 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:52:34.784 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:52:35.047 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.bestbuy.com/click/5592e2b895800000/12345678/pdp
+1 > Host: api.bestbuy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:52:36.625 [main] DEBUG com.intuit.karate - request:
+2 > GET https://api.bestbuy.com/click/5592e2b895800000/12345678/pdp
+2 > Host: www.bestbuy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+16:52:36.918 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 2098 milliseconds for url: https://api.bestbuy.com/click/5592e2b895800000/12345678/pdp
+16:52:36.920 [main] ERROR com.intuit.karate - classpath:examples/users/getapiData.feature:6
+When method GET
+http call failed after 2098 milliseconds for url: https://api.bestbuy.com/click/5592e2b895800000/12345678/pdp
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+classpath:examples/users/getapiData.feature:6

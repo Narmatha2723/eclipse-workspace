@@ -1,0 +1,34 @@
+package string;
+
+import java.util.Arrays;
+
+public class Anagram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String word1="Race";
+		String word2="bare";
+		boolean s=true;
+		word1=word1.toLowerCase();
+		char word11[]=word1.toCharArray();
+		char word12[]=word2.toCharArray();
+		Arrays.sort(word11);
+		Arrays.sort(word12);
+		System.out.println(word11);
+		System.out.println(word12);
+		if(word11.length==word12.length) {
+			for(int i=0;i<word11.length;i++) {
+				if(word11[i]==(word12[i])) {
+				  s=Arrays.equals(word11, word12);
+				}
+			}
+            if(s==true) {
+            	System.err.println("Anagram");
+            }
+			
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package javaprogms;
+
+public class Reversenos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 12345;
+		int a[]= {1,2,3,4,5};
+		
+		String s="narmatha";
+		char []c=s.toCharArray();
+		System.out.println(c);
+
+	}
+
+}

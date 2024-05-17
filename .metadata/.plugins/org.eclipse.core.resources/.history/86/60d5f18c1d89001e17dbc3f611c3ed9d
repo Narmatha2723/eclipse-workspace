@@ -1,0 +1,21 @@
+package javaLearning;
+ 
+import java.util.Scanner;
+ 
+public class Two_Initial_Pair {
+	Scanner sc = new Scanner(System.in);
+	
+	String name;
+	int id; 
+	grade, pay and location.
+	
+	
+	void getData(double l, double w) {
+		length=l;
+		width=w;
+	}
+	double printData() {
+		return length*width;
+	}
+ 
+}

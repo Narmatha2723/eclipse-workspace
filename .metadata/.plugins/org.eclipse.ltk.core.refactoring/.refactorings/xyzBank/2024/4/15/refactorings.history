@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;xyzBank/src/test/java/feature/DepositeWithdraw.feature&apos; to &apos;DepositWithdraw.feature&apos;" description="Rename resource &apos;DepositeWithdraw.feature&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/java/feature/DepositeWithdraw.feature" name="DepositWithdraw.feature" stamp="1712658008329" updateReferences="true"/>
+</session>
